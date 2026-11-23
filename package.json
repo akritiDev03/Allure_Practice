@@ -1,0 +1,19 @@
+{
+  "name": "login-automation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Beginner-friendly JavaScript Playwright project with Allure reporting",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:open": "allure open allure-report",
+    "report:serve": "allure serve allure-results"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.3.0"
+  }
+}
